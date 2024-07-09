@@ -16,10 +16,10 @@ Riskified plugin for Flutter.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.platform = :ios, '8.0'
+  s.platform = :ios, '12.0'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
-  s.dependency 'RiskifiedBeacon', '~>1.2.7'
+  s.dependency 'RiskifiedBeaconXCFramework', '~>1.4.2'
 end

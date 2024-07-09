@@ -1,5 +1,5 @@
 #import <Flutter/Flutter.h>
-#import "RiskifiedBeacon.h"
+#import <RiskifiedBeacon/RiskifiedBeacon.h>
 
 @interface FlutterRiskifiedPlugin : NSObject<FlutterPlugin>
 @end

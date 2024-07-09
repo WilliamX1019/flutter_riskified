@@ -70,7 +70,7 @@ class FlutterRiskifiedPlugin : FlutterPlugin, MethodCallHandler {
                 result.success(null)
             }
             "removeLocationUpdates" -> {
-                beacon.removeLocationUpdates()
+                // beacon.removeLocationUpdates()
                 result.success(null)
             }
             "riskifiedDeviceId" -> {
@@ -85,6 +85,6 @@ class FlutterRiskifiedPlugin : FlutterPlugin, MethodCallHandler {
 
     override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
         channel.setMethodCallHandler(null)
-        beacon.removeLocationUpdates()
+        // beacon.removeLocationUpdates()
     }
 }

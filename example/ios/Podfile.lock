@@ -1,9 +1,9 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_riskified (0.2.0-pre):
+  - flutter_riskified (0.3.0-pre):
     - Flutter
-    - RiskifiedBeacon (~> 1.2.7)
-  - RiskifiedBeacon (1.2.7)
+    - RiskifiedBeaconXCFramework (~> 1.4.2)
+  - RiskifiedBeaconXCFramework (1.4.2)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -11,7 +11,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - RiskifiedBeacon
+    - RiskifiedBeaconXCFramework
 
 EXTERNAL SOURCES:
   Flutter:
@@ -20,10 +20,10 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_riskified/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_riskified: 46c32feab08745eea9c75c2cacfb30465875286b
-  RiskifiedBeacon: f8b68b96716408b694a697b6c223c88eafae4d32
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_riskified: 94c944132b9f15b3db015c5cd0225c7e34fa0c1b
+  RiskifiedBeaconXCFramework: b0816a7dc7eefcefcd864d6f10ccb2a5aa59f6fa
 
-PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
+PODFILE CHECKSUM: 1a782344d33c12ced0182eeab11e8668d253eb48
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.2
