@@ -13,7 +13,6 @@
   if ([@"startBeacon" isEqualToString:call.method]) {
       NSString *shopName = call.arguments[@"shopName"];
       NSString *token = call.arguments[@"token"];
-      
       bool debugInfo = [call.arguments[@"debugInfo"] boolValue];
       
       [RiskifiedBeacon startBeacon:shopName sessionToken:token debugInfo:debugInfo];
@@ -25,17 +24,18 @@
       result(nil);
   } else if ([@"logRequest" isEqualToString:call.method]) {
       NSString *requestUrl = call.arguments;
-      NSString *encodedUrl = [requestUrl stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
-
+      NSString *encodedUrl = [requestUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
       NSURL *url = [NSURL URLWithString:encodedUrl];
       
       [RiskifiedBeacon logRequest:url];
       result(nil);
   } else if ([@"logSensitiveDeviceInfo" isEqualToString:call.method]) {
       [RiskifiedBeacon logSensitiveDeviceInfo];
+      
       result(nil);
   } else if ([@"riskifiedDeviceId" isEqualToString:call.method]) {
       NSString *riskifiedDeviceId = [RiskifiedBeacon rCookie];
+      
       result(riskifiedDeviceId);
   } else {
     result(FlutterMethodNotImplemented);
