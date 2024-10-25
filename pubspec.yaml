@@ -1,7 +1,8 @@
 name: flutter_riskified
 description: Riskified beacon plugin for Flutter. Supports Android and iOS.
 version: 0.3.1
-homepage: https://github.com/MrTarantula/flutter_riskified
+publish_to: https://github.com/WilliamX1019/flutter_riskified.git
+homepage: https://github.com/WilliamX1019/flutter_riskified.git
 
 environment:
   sdk: ">=2.12.0 <4.0.0"
